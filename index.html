@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F to C</title>
+</head>
+<body>
+    <script>
+        function FTOC() {
+            let p1 = prompt("Set your F");
+            let c1 = confirm("Are you sure you want to see the C converted of " + p1 + "?");
+            if (c1 == true) {
+                alert("Your converted Celcius of your " + p1 + "F is: " + (p1 - 32)*0.5556);
+            } else {
+                alert("Ok");
+            }
+        };
+        function CTOF() {
+            let p2 = prompt("Set your C");
+            let c2 = confirm("Are you sure you want to see the F converted of " + p2 + "?");
+            if (c2 == true) {
+                alert("Your converted Fahrenheit of your " + p2 + "C is: " + (p2 * 1.8)+32);
+            } else {
+                alert("Ok");
+            }
+        };
+    </script>
+    <div class="hud-container">
+        <div class="hud-container-table">
+            <div class="hud-container-td">
+                <table>
+                    <td>
+                        <tr>
+                            <button onclick="FTOC()">
+                                <span>
+                                    <strong>F to C calculator</strong>
+                                </span>
+                            </button>
+                            <button onclick="CTOF()">
+                                <span>
+                                    <strong>C to F calculator</strong>
+                                </span>
+                            </button>
+                        </tr>
+                    </td>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
